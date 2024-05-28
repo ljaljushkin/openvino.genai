@@ -1,0 +1,2100 @@
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.03s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.31ms, Generation Time: 9.70s, Latency: 75.76 ms/token
+[ INFO ] [warm-up] First token latency: 1275.74 ms/token, other tokens latency: 66.13 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1274.60 ms/infer, other infers latency: 65.55 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5571.04MBytes, max shared memory cost: 2131.47MBytes
+[ INFO ] [warm-up] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Neural Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and data scientists deploy and optimize deep learning models, particularly for Intel hardware. OpenVINO provides a comprehensive solution for converting trained models from popular frameworks like TensorFlow, PyTorch, and Keras into optimized formats that can run efficiently on Intel CPUs and GPUs.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the In
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.45s, Latency: 66.03 ms/token
+[ INFO ] [1] First token latency: 160.18 ms/token, other tokens latency: 65.28 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 159.63 ms/infer, other infers latency: 64.70 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.24ms, Generation Time: 8.23s, Latency: 64.32 ms/token
+[ INFO ] [2] First token latency: 151.17 ms/token, other tokens latency: 63.62 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 150.59 ms/infer, other infers latency: 63.05 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.24ms, Generation Time: 8.31s, Latency: 64.88 ms/token
+[ INFO ] [3] First token latency: 154.19 ms/token, other tokens latency: 64.17 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 153.64 ms/infer, other infers latency: 63.59 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 155.18 ms/token, 2nd tokens latency: 64.35 ms/token, 2nd tokens throughput: 15.54 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.69s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.29ms, Generation Time: 9.27s, Latency: 72.42 ms/token
+[ INFO ] [warm-up] First token latency: 1263.85 ms/token, other tokens latency: 62.84 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1262.72 ms/infer, other infers latency: 62.27 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5443.94MBytes, max shared memory cost: 2096.60MBytes
+[ INFO ] [warm-up] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web doesn't give a clear answer. I've found that it is a tool, but what does it do?
+
+Is it a tool for optimizing neural networks?
+
+Is it a tool for converting neural networks to a format that can be run on Intel CPUs?
+
+Is it a tool for running neural networks on Intel CPUs?
+
+Is it a tool for running neural networks on Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel CPUs?
+
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 7.85s, Latency: 61.36 ms/token
+[ INFO ] [1] First token latency: 157.03 ms/token, other tokens latency: 60.59 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 156.43 ms/infer, other infers latency: 60.02 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.24ms, Generation Time: 7.87s, Latency: 61.50 ms/token
+[ INFO ] [2] First token latency: 147.48 ms/token, other tokens latency: 60.80 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 146.92 ms/infer, other infers latency: 60.24 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.86s, Latency: 61.37 ms/token
+[ INFO ] [3] First token latency: 147.60 ms/token, other tokens latency: 60.68 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 147.00 ms/infer, other infers latency: 60.12 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 150.71 ms/token, 2nd tokens latency: 60.69 ms/token, 2nd tokens throughput: 16.48 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.65s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.30ms, Detokenization Time: 0.32ms, Generation Time: 9.18s, Latency: 71.73 ms/token
+[ INFO ] [warm-up] First token latency: 1286.34 ms/token, other tokens latency: 61.98 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1285.23 ms/infer, other infers latency: 61.42 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5436.13MBytes, max shared memory cost: 2091.38MBytes
+[ INFO ] [warm-up] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference, but I don't understand what it is and how it works.
+
+I'm looking for a simple explanation of what it is, how it works, and how to use it.
+
+I'm a beginner in this field, so please explain it in a simple way.
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I'm trying to use it for a project I'm working on.
+
+I have a trained model (a neural network) that I
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.24ms, Generation Time: 7.74s, Latency: 60.46 ms/token
+[ INFO ] [1] First token latency: 149.92 ms/token, other tokens latency: 59.74 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 149.35 ms/infer, other infers latency: 59.18 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.25ms, Generation Time: 7.75s, Latency: 60.55 ms/token
+[ INFO ] [2] First token latency: 141.46 ms/token, other tokens latency: 59.89 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 140.89 ms/infer, other infers latency: 59.33 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 7.75s, Latency: 60.56 ms/token
+[ INFO ] [3] First token latency: 140.67 ms/token, other tokens latency: 59.92 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 140.11 ms/infer, other infers latency: 59.34 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 144.02 ms/token, 2nd tokens latency: 59.85 ms/token, 2nd tokens throughput: 16.71 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.77s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.29ms, Generation Time: 9.44s, Latency: 73.73 ms/token
+[ INFO ] [warm-up] First token latency: 1270.09 ms/token, other tokens latency: 64.12 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1268.94 ms/infer, other infers latency: 63.55 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5458.84MBytes, max shared memory cost: 2117.48MBytes
+[ INFO ] [warm-up] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference optimization. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I found this link:
+
+https://docs.intuition.ai/intermediate/openvino/index.html
+
+
+It says:
+
+> OpenVINO is an open-source toolkit for inference optimization.
+
+
+I am still not sure what it is.
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.21ms, Generation Time: 7.99s, Latency: 62.40 ms/token
+[ INFO ] [1] First token latency: 151.17 ms/token, other tokens latency: 61.69 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 150.58 ms/infer, other infers latency: 61.11 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.99s, Latency: 62.44 ms/token
+[ INFO ] [2] First token latency: 145.70 ms/token, other tokens latency: 61.77 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 145.11 ms/infer, other infers latency: 61.20 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.00s, Latency: 62.50 ms/token
+[ INFO ] [3] First token latency: 141.27 ms/token, other tokens latency: 61.87 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 140.69 ms/infer, other infers latency: 61.29 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 146.05 ms/token, 2nd tokens latency: 61.78 ms/token, 2nd tokens throughput: 16.19 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.40s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.48ms, Detokenization Time: 0.29ms, Generation Time: 9.84s, Latency: 76.88 ms/token
+[ INFO ] [warm-up] First token latency: 1326.12 ms/token, other tokens latency: 66.88 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1325.09 ms/infer, other infers latency: 66.32 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5536.13MBytes, max shared memory cost: 2094.29MBytes
+[ INFO ] [warm-up] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web doesn't give a clear answer. I've found that it's a tool, but what does it do?
+
+Is it a tool for optimizing neural networks?
+
+Is it a tool for converting neural networks to a format that can be run on Intel hardware?
+
+Is it a tool for running neural networks on Intel hardware?
+
+Is it a tool for running neural networks on any hardware?
+
+Is it a tool for optimizing neural networks for any hardware?
+
+Is it a tool for optimizing neural networks for Intel hardware?
+
+Is it a
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.30s, Latency: 64.84 ms/token
+[ INFO ] [1] First token latency: 163.63 ms/token, other tokens latency: 64.05 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 163.06 ms/infer, other infers latency: 63.49 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 8.42s, Latency: 65.78 ms/token
+[ INFO ] [2] First token latency: 164.26 ms/token, other tokens latency: 64.99 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 163.69 ms/infer, other infers latency: 64.43 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.75s, Latency: 68.39 ms/token
+[ INFO ] [3] First token latency: 192.54 ms/token, other tokens latency: 67.39 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 192.04 ms/infer, other infers latency: 66.82 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 173.48 ms/token, 2nd tokens latency: 65.48 ms/token, 2nd tokens throughput: 15.27 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.07s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.29ms, Generation Time: 10.16s, Latency: 79.34 ms/token
+[ INFO ] [warm-up] First token latency: 1741.16 ms/token, other tokens latency: 66.08 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1740.20 ms/infer, other infers latency: 65.51 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5445.46MBytes, max shared memory cost: 2086.23MBytes
+[ INFO ] [warm-up] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web doesn't give a clear answer. I've found that it is a tool, but what does it do?
+
+Is it a tool for optimizing neural networks?
+
+Is it a tool for converting neural networks to a format that can be run on Intel CPUs?
+
+Is it a tool for running neural networks on Intel CPUs?
+
+Is it a tool for running neural networks on Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel CPUs?
+
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.28s, Latency: 64.68 ms/token
+[ INFO ] [1] First token latency: 152.81 ms/token, other tokens latency: 63.97 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 152.22 ms/infer, other infers latency: 63.40 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 8.38s, Latency: 65.46 ms/token
+[ INFO ] [2] First token latency: 151.12 ms/token, other tokens latency: 64.77 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 150.46 ms/infer, other infers latency: 64.20 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.82s, Latency: 61.07 ms/token
+[ INFO ] [3] First token latency: 147.46 ms/token, other tokens latency: 60.37 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 146.89 ms/infer, other infers latency: 59.81 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 150.46 ms/token, 2nd tokens latency: 63.04 ms/token, 2nd tokens throughput: 15.86 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.91s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.30ms, Generation Time: 9.15s, Latency: 71.46 ms/token
+[ INFO ] [warm-up] First token latency: 1290.52 ms/token, other tokens latency: 61.68 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1289.36 ms/infer, other infers latency: 61.11 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5461.84MBytes, max shared memory cost: 2083.50MBytes
+[ INFO ] [warm-up] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference, but I don't understand what it is and how it works.
+
+I'm looking for a simple explanation of what it is, how it works, and how to use it.
+
+I'm a beginner in this field, so please explain it in a simple way.
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I'm trying to use it for a project I'm working on.
+
+I have a trained model (a neural network) that I
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.26s, Latency: 64.53 ms/token
+[ INFO ] [1] First token latency: 148.32 ms/token, other tokens latency: 63.85 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 147.72 ms/infer, other infers latency: 63.28 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.00s, Latency: 62.50 ms/token
+[ INFO ] [2] First token latency: 172.01 ms/token, other tokens latency: 61.63 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 171.49 ms/infer, other infers latency: 61.06 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.85s, Latency: 61.35 ms/token
+[ INFO ] [3] First token latency: 177.66 ms/token, other tokens latency: 60.42 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 177.13 ms/infer, other infers latency: 59.85 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 166.00 ms/token, 2nd tokens latency: 61.96 ms/token, 2nd tokens throughput: 16.14 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.24s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.30ms, Generation Time: 10.66s, Latency: 83.31 ms/token
+[ INFO ] [warm-up] First token latency: 1546.97 ms/token, other tokens latency: 71.62 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1546.05 ms/infer, other infers latency: 71.05 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5768.69MBytes, max shared memory cost: 2157.64MBytes
+[ INFO ] [warm-up] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web, I found that it is a tool from Intel, but I couldn't find much information about it.
+
+What is it? What does it do?
+
+I'm interested in using it for inference on a neural network.
+
+I've heard that it can be used to optimize the inference of a neural network.
+
+I'm using TensorFlow and Keras, but I'm also interested in other frameworks.
+
+I'd like to know more about it.
+
+Thanks
+
+[Response]: OpenVINO, also known as the
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.95s, Latency: 69.92 ms/token
+[ INFO ] [1] First token latency: 173.74 ms/token, other tokens latency: 69.08 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 173.18 ms/infer, other infers latency: 68.52 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 8.95s, Latency: 69.91 ms/token
+[ INFO ] [2] First token latency: 169.50 ms/token, other tokens latency: 69.11 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 168.94 ms/infer, other infers latency: 68.54 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 8.95s, Latency: 69.95 ms/token
+[ INFO ] [3] First token latency: 201.54 ms/token, other tokens latency: 68.90 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 200.95 ms/infer, other infers latency: 68.33 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 181.59 ms/token, 2nd tokens latency: 69.03 ms/token, 2nd tokens throughput: 14.49 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.91s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.31ms, Detokenization Time: 0.32ms, Generation Time: 9.81s, Latency: 76.65 ms/token
+[ INFO ] [warm-up] First token latency: 1293.75 ms/token, other tokens latency: 66.88 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1292.68 ms/infer, other infers latency: 66.31 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5591.93MBytes, max shared memory cost: 2131.21MBytes
+[ INFO ] [warm-up] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Neural Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and data scientists deploy and optimize deep learning models, particularly for Intel hardware. OpenVINO provides a comprehensive solution for converting trained models from popular frameworks like TensorFlow, PyTorch, and Keras into optimized formats that can run efficiently on Intel CPUs and GPUs.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the In
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.22ms, Detokenization Time: 0.24ms, Generation Time: 9.07s, Latency: 70.85 ms/token
+[ INFO ] [1] First token latency: 199.99 ms/token, other tokens latency: 69.82 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 199.48 ms/infer, other infers latency: 69.25 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.24ms, Generation Time: 8.64s, Latency: 67.52 ms/token
+[ INFO ] [2] First token latency: 206.38 ms/token, other tokens latency: 66.41 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 205.78 ms/infer, other infers latency: 65.84 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 8.34s, Latency: 65.12 ms/token
+[ INFO ] [3] First token latency: 174.06 ms/token, other tokens latency: 64.24 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 173.49 ms/infer, other infers latency: 63.68 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['35111a8b8fa24dc6fc639b001831aa82']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 193.48 ms/token, 2nd tokens latency: 66.83 ms/token, 2nd tokens throughput: 14.96 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.80s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.29ms, Generation Time: 10.12s, Latency: 79.03 ms/token
+[ INFO ] [warm-up] First token latency: 1512.13 ms/token, other tokens latency: 67.59 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1511.10 ms/infer, other infers latency: 67.03 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5560.43MBytes, max shared memory cost: 2119.89MBytes
+[ INFO ] [warm-up] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference optimization. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I found this link:
+
+https://docs.intuition.ai/intermediate/openvino/index.html
+
+
+It says:
+
+> OpenVINO is an open-source toolkit for inference optimization.
+
+
+I am still not sure what it is.
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.58s, Latency: 67.03 ms/token
+[ INFO ] [1] First token latency: 171.28 ms/token, other tokens latency: 66.20 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 170.60 ms/infer, other infers latency: 65.63 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.94s, Latency: 69.83 ms/token
+[ INFO ] [2] First token latency: 204.03 ms/token, other tokens latency: 68.75 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 203.43 ms/infer, other infers latency: 68.18 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 8.84s, Latency: 69.08 ms/token
+[ INFO ] [3] First token latency: 210.34 ms/token, other tokens latency: 67.96 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 209.75 ms/infer, other infers latency: 67.39 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 195.22 ms/token, 2nd tokens latency: 67.64 ms/token, 2nd tokens throughput: 14.79 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.79s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.30ms, Generation Time: 10.04s, Latency: 78.44 ms/token
+[ INFO ] [warm-up] First token latency: 1281.47 ms/token, other tokens latency: 68.79 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1280.36 ms/infer, other infers latency: 68.22 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5505.77MBytes, max shared memory cost: 2097.04MBytes
+[ INFO ] [warm-up] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web doesn't give a clear answer. I've found that it is a tool, but what does it do?
+
+Is it a tool for optimizing neural networks?
+
+Is it a tool for converting neural networks to a format that can be run on Intel CPUs?
+
+Is it a tool for running neural networks on Intel CPUs?
+
+Is it a tool for running neural networks on Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel CPUs?
+
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.80s, Latency: 68.74 ms/token
+[ INFO ] [1] First token latency: 204.74 ms/token, other tokens latency: 67.65 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 204.14 ms/infer, other infers latency: 67.07 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.57s, Latency: 66.97 ms/token
+[ INFO ] [2] First token latency: 195.46 ms/token, other tokens latency: 65.94 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 194.84 ms/infer, other infers latency: 65.36 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.30ms, Generation Time: 8.44s, Latency: 65.90 ms/token
+[ INFO ] [3] First token latency: 144.38 ms/token, other tokens latency: 65.27 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 143.80 ms/infer, other infers latency: 64.70 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 181.53 ms/token, 2nd tokens latency: 66.29 ms/token, 2nd tokens throughput: 15.09 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.65s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.30ms, Generation Time: 9.36s, Latency: 73.16 ms/token
+[ INFO ] [warm-up] First token latency: 1267.04 ms/token, other tokens latency: 63.58 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1265.94 ms/infer, other infers latency: 63.01 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5438.50MBytes, max shared memory cost: 2091.71MBytes
+[ INFO ] [warm-up] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference, but I don't understand what it is and how it works.
+
+I'm looking for a simple explanation of what it is, how it works, and how to use it.
+
+I'm a beginner in this field, so please explain it in a simple way.
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I'm trying to use it for a project I'm working on.
+
+I have a trained model (a neural network) that I
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.75s, Latency: 60.51 ms/token
+[ INFO ] [1] First token latency: 152.72 ms/token, other tokens latency: 59.77 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 152.13 ms/infer, other infers latency: 59.21 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.74s, Latency: 60.43 ms/token
+[ INFO ] [2] First token latency: 142.62 ms/token, other tokens latency: 59.77 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 142.04 ms/infer, other infers latency: 59.20 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 7.99s, Latency: 62.44 ms/token
+[ INFO ] [3] First token latency: 143.22 ms/token, other tokens latency: 61.79 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 142.66 ms/infer, other infers latency: 61.21 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 146.19 ms/token, 2nd tokens latency: 60.44 ms/token, 2nd tokens throughput: 16.54 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.37s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.30ms, Generation Time: 10.26s, Latency: 80.17 ms/token
+[ INFO ] [warm-up] First token latency: 1440.14 ms/token, other tokens latency: 69.29 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1439.02 ms/infer, other infers latency: 68.73 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5554.59MBytes, max shared memory cost: 2095.39MBytes
+[ INFO ] [warm-up] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web doesn't give a clear answer. I've found that it's a tool, but what does it do?
+
+Is it a tool for optimizing neural networks?
+
+Is it a tool for converting neural networks to a format that can be run on Intel hardware?
+
+Is it a tool for running neural networks on Intel hardware?
+
+Is it a tool for running neural networks on any hardware?
+
+Is it a tool for optimizing neural networks for any hardware?
+
+Is it a tool for optimizing neural networks for Intel hardware?
+
+Is it a
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 9.09s, Latency: 70.99 ms/token
+[ INFO ] [1] First token latency: 218.67 ms/token, other tokens latency: 69.82 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 218.02 ms/infer, other infers latency: 69.24 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 9.21s, Latency: 71.98 ms/token
+[ INFO ] [2] First token latency: 229.62 ms/token, other tokens latency: 70.72 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 228.98 ms/infer, other infers latency: 70.14 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 9.28s, Latency: 72.51 ms/token
+[ INFO ] [3] First token latency: 228.48 ms/token, other tokens latency: 71.26 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 227.87 ms/infer, other infers latency: 70.69 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['b4de726e8f4c846901cab2d6742f4e67']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 225.59 ms/token, 2nd tokens latency: 70.60 ms/token, 2nd tokens throughput: 14.16 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.25s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.31ms, Generation Time: 10.55s, Latency: 82.41 ms/token
+[ INFO ] [warm-up] First token latency: 1542.17 ms/token, other tokens latency: 70.72 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1540.92 ms/infer, other infers latency: 70.16 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5799.95MBytes, max shared memory cost: 2156.56MBytes
+[ INFO ] [warm-up] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web, I found that it is a tool from Intel, but I couldn't find much information about it.
+
+What is it? What does it do?
+
+I'm interested in using it for inference on a neural network.
+
+I've heard that it can be used to optimize the inference of a neural network.
+
+I'm using TensorFlow and Keras, but I'm also interested in other frameworks.
+
+I'd like to know more about it.
+
+Thanks
+
+[Response]: OpenVINO, also known as the
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.65s, Latency: 67.61 ms/token
+[ INFO ] [1] First token latency: 168.76 ms/token, other tokens latency: 66.80 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 168.21 ms/infer, other infers latency: 66.24 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 8.55s, Latency: 66.78 ms/token
+[ INFO ] [2] First token latency: 174.38 ms/token, other tokens latency: 65.92 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 173.82 ms/infer, other infers latency: 65.36 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.60s, Latency: 67.16 ms/token
+[ INFO ] [3] First token latency: 168.78 ms/token, other tokens latency: 66.35 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 168.24 ms/infer, other infers latency: 65.78 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['872a3e66e76aec11d3d69fc801308c18']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 170.64 ms/token, 2nd tokens latency: 66.35 ms/token, 2nd tokens throughput: 15.07 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.14s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.27ms, Detokenization Time: 0.30ms, Generation Time: 9.39s, Latency: 73.33 ms/token
+[ INFO ] [warm-up] First token latency: 1360.91 ms/token, other tokens latency: 63.01 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1359.79 ms/infer, other infers latency: 62.44 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5408.11MBytes, max shared memory cost: 2085.92MBytes
+[ INFO ] [warm-up] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?
+
+Searching the web doesn't give a clear answer. I've found that it is a tool, but what does it do?
+
+Is it a tool for optimizing neural networks?
+
+Is it a tool for converting neural networks to a format that can be run on Intel CPUs?
+
+Is it a tool for running neural networks on Intel CPUs?
+
+Is it a tool for running neural networks on Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel GPUs?
+
+Is it a tool for optimizing neural networks for Intel CPUs?
+
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.89s, Latency: 61.66 ms/token
+[ INFO ] [1] First token latency: 153.83 ms/token, other tokens latency: 60.92 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 153.24 ms/infer, other infers latency: 60.34 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 7.91s, Latency: 61.82 ms/token
+[ INFO ] [2] First token latency: 159.33 ms/token, other tokens latency: 61.04 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 158.73 ms/infer, other infers latency: 60.47 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 7.90s, Latency: 61.70 ms/token
+[ INFO ] [3] First token latency: 148.93 ms/token, other tokens latency: 61.00 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 148.34 ms/infer, other infers latency: 60.43 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9d71927677b25d472268e1a4c174d2d9']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 154.03 ms/token, 2nd tokens latency: 60.98 ms/token, 2nd tokens throughput: 16.40 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.92s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.29ms, Generation Time: 9.29s, Latency: 72.57 ms/token
+[ INFO ] [warm-up] First token latency: 1401.99 ms/token, other tokens latency: 61.93 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1400.85 ms/infer, other infers latency: 61.35 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5437.53MBytes, max shared memory cost: 2084.27MBytes
+[ INFO ] [warm-up] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference, but I don't understand what it is and how it works.
+
+I'm looking for a simple explanation of what it is, how it works, and how to use it.
+
+I'm a beginner in this field, so please explain it in a simple way.
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I'm trying to use it for a project I'm working on.
+
+I have a trained model (a neural network) that I
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 7.91s, Latency: 61.79 ms/token
+[ INFO ] [1] First token latency: 158.06 ms/token, other tokens latency: 61.02 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 157.48 ms/infer, other infers latency: 60.45 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.77s, Latency: 60.70 ms/token
+[ INFO ] [2] First token latency: 153.38 ms/token, other tokens latency: 59.95 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 152.80 ms/infer, other infers latency: 59.38 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.22ms, Generation Time: 7.79s, Latency: 60.82 ms/token
+[ INFO ] [3] First token latency: 159.00 ms/token, other tokens latency: 60.04 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 158.49 ms/infer, other infers latency: 59.46 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['e194e9f960fb3da15d4551a153c1504b']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 156.81 ms/token, 2nd tokens latency: 60.34 ms/token, 2nd tokens throughput: 16.57 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.47s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.29ms, Generation Time: 9.82s, Latency: 76.73 ms/token
+[ INFO ] [warm-up] First token latency: 1309.55 ms/token, other tokens latency: 66.84 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1308.40 ms/infer, other infers latency: 66.27 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5422.54MBytes, max shared memory cost: 2092.36MBytes
+[ INFO ] [warm-up] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference optimization. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I found this link:
+
+https://docs.intuition.ai/intermediate/openvino/index.html
+
+
+It says:
+
+> OpenVINO is an open-source toolkit for inference optimization.
+
+
+I am still not sure what it is.
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.21ms, Generation Time: 8.47s, Latency: 66.14 ms/token
+[ INFO ] [1] First token latency: 159.34 ms/token, other tokens latency: 65.39 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 158.79 ms/infer, other infers latency: 64.83 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.27ms, Generation Time: 8.59s, Latency: 67.09 ms/token
+[ INFO ] [2] First token latency: 161.90 ms/token, other tokens latency: 66.33 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 161.31 ms/infer, other infers latency: 65.76 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.25ms, Detokenization Time: 0.23ms, Generation Time: 8.70s, Latency: 67.95 ms/token
+[ INFO ] [3] First token latency: 209.41 ms/token, other tokens latency: 66.82 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 208.78 ms/infer, other infers latency: 66.26 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 176.88 ms/token, 2nd tokens latency: 66.18 ms/token, 2nd tokens throughput: 15.11 tokens/s
+INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.21s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.28ms, Generation Time: 9.62s, Latency: 75.17 ms/token
+[ INFO ] [warm-up] First token latency: 1335.54 ms/token, other tokens latency: 65.07 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1334.44 ms/infer, other infers latency: 64.50 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5469.71MBytes, max shared memory cost: 2092.59MBytes
+[ INFO ] [warm-up] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO tool?
+
+Searching on internet, I found out that it is a tool for inference optimization. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks in advance.
+
+
+----------
+
+
+**Update:**
+
+I found this link:
+
+https://docs.intuition.ai/intermediate/openvino/index.html
+
+
+It says:
+
+> OpenVINO is an open-source toolkit for inference optimization.
+
+
+I am still not sure what it is.
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.22ms, Generation Time: 8.03s, Latency: 62.70 ms/token
+[ INFO ] [1] First token latency: 155.13 ms/token, other tokens latency: 61.96 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 154.56 ms/infer, other infers latency: 61.39 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.21ms, Generation Time: 8.03s, Latency: 62.74 ms/token
+[ INFO ] [2] First token latency: 156.12 ms/token, other tokens latency: 61.99 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 155.54 ms/infer, other infers latency: 61.42 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 8.06s, Latency: 63.01 ms/token
+[ INFO ] [3] First token latency: 156.39 ms/token, other tokens latency: 62.26 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 155.81 ms/infer, other infers latency: 61.70 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['5bff70c2ebb678f083811c604bfa2e8f']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 155.88 ms/token, 2nd tokens latency: 62.07 ms/token, 2nd tokens throughput: 16.11 tokens/s
+
+
+int4_sym_g128_r100_data_lora
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_loraINFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.87s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.31ms, Generation Time: 9.73s, Latency: 76.05 ms/token
+[ INFO ] [warm-up] First token latency: 1364.90 ms/token, other tokens latency: 65.73 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1363.84 ms/infer, other infers latency: 65.19 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5586.88MBytes, max shared memory cost: 2129.93MBytes
+[ INFO ] [warm-up] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and researchers build powerful computer vision and AI applications. OpenVINO provides a comprehensive set of tools and libraries that enable the deployment of deep learning models on Intel hardware, leveraging the power of Intel's integrated processors and optimized libraries.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the Inference Engine is a high-performance,
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.24ms, Generation Time: 8.13s, Latency: 63.52 ms/token
+[ INFO ] [1] First token latency: 80.75 ms/token, other tokens latency: 63.37 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 80.20 ms/infer, other infers latency: 62.83 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 8.13s, Latency: 63.49 ms/token
+[ INFO ] [2] First token latency: 82.59 ms/token, other tokens latency: 63.33 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 82.06 ms/infer, other infers latency: 62.80 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.25ms, Generation Time: 8.14s, Latency: 63.58 ms/token
+[ INFO ] [3] First token latency: 80.82 ms/token, other tokens latency: 63.42 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 80.28 ms/infer, other infers latency: 62.90 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 81.39 ms/token, 2nd tokens latency: 63.37 ms/token, 2nd tokens throughput: 15.78 tokens/s
+
+
+int4_sym_g128_r100_data_lora75
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.71s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.29ms, Generation Time: 9.45s, Latency: 73.82 ms/token
+[ INFO ] [warm-up] First token latency: 1350.22 ms/token, other tokens latency: 63.59 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1349.14 ms/infer, other infers latency: 63.04 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5519.21MBytes, max shared memory cost: 2118.93MBytes
+[ INFO ] [warm-up] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolchain?
+
+I've been looking for a good toolchain for running inference on a neural network. I've come across OpenVINO, but I'm not sure what it is.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**EDIT:**
+
+I've been looking into it a bit more, and I've found this:
+
+> OpenVINO is an open-source toolkit for building and deploying inference engines.
+>
+> The OpenVINO toolkit is a collection of
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 7.85s, Latency: 61.29 ms/token
+[ INFO ] [1] First token latency: 78.52 ms/token, other tokens latency: 61.14 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 77.95 ms/infer, other infers latency: 60.59 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.21ms, Generation Time: 7.85s, Latency: 61.30 ms/token
+[ INFO ] [2] First token latency: 78.41 ms/token, other tokens latency: 61.15 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 77.86 ms/infer, other infers latency: 60.60 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.85s, Latency: 61.34 ms/token
+[ INFO ] [3] First token latency: 78.34 ms/token, other tokens latency: 61.19 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 77.80 ms/infer, other infers latency: 60.64 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 78.42 ms/token, 2nd tokens latency: 61.16 ms/token, 2nd tokens throughput: 16.35 tokens/s
+
+
+int4_sym_g128_r100_data_lora50
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.73s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.30ms, Generation Time: 9.39s, Latency: 73.38 ms/token
+[ INFO ] [warm-up] First token latency: 1359.80 ms/token, other tokens latency: 63.09 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1358.74 ms/infer, other infers latency: 62.53 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5458.31MBytes, max shared memory cost: 2098.32MBytes
+[ INFO ] [warm-up] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for building inference engines. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**Edit:**
+
+I'm trying to use it to build a custom model for my project.
+
+I've already installed the OpenVINO environment and the Inference Engine samples.
+
+I'm using the Python API.
+
+I've already tried to run the example provided in the samples, but
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 7.77s, Latency: 60.67 ms/token
+[ INFO ] [1] First token latency: 77.40 ms/token, other tokens latency: 60.53 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 76.87 ms/infer, other infers latency: 59.99 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.76s, Latency: 60.60 ms/token
+[ INFO ] [2] First token latency: 71.16 ms/token, other tokens latency: 60.50 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 70.59 ms/infer, other infers latency: 59.96 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.76s, Latency: 60.61 ms/token
+[ INFO ] [3] First token latency: 69.84 ms/token, other tokens latency: 60.52 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 69.30 ms/infer, other infers latency: 59.99 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 72.80 ms/token, 2nd tokens latency: 60.52 ms/token, 2nd tokens throughput: 16.52 tokens/s
+
+
+int4_sym_g128_r100_data_lora25
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.60s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.30ms, Generation Time: 9.24s, Latency: 72.19 ms/token
+[ INFO ] [warm-up] First token latency: 1344.55 ms/token, other tokens latency: 61.99 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1343.45 ms/infer, other infers latency: 61.46 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5483.79MBytes, max shared memory cost: 2092.19MBytes
+[ INFO ] [warm-up] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolchain?
+
+I've been looking for a good toolchain for running inference on a neural network. I've come across OpenVINO, but I'm not sure what it is.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**EDIT:**
+
+I've been looking into it a bit more, and I've found this:
+
+> OpenVINO is an open-source toolkit for building and deploying inference engines.
+>
+> The OpenVINO toolkit is a collection of
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 7.64s, Latency: 59.67 ms/token
+[ INFO ] [1] First token latency: 75.42 ms/token, other tokens latency: 59.53 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 74.89 ms/infer, other infers latency: 58.99 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 7.64s, Latency: 59.69 ms/token
+[ INFO ] [2] First token latency: 75.77 ms/token, other tokens latency: 59.55 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 75.23 ms/infer, other infers latency: 58.99 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 7.64s, Latency: 59.67 ms/token
+[ INFO ] [3] First token latency: 76.06 ms/token, other tokens latency: 59.53 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 75.53 ms/infer, other infers latency: 58.98 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 75.75 ms/token, 2nd tokens latency: 59.54 ms/token, 2nd tokens throughput: 16.80 tokens/s
+
+
+int4_sym_g128_r100_data_lora_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.27s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.32ms, Generation Time: 10.03s, Latency: 78.38 ms/token
+[ INFO ] [warm-up] First token latency: 1503.64 ms/token, other tokens latency: 66.97 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1502.50 ms/infer, other infers latency: 66.41 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5484.28MBytes, max shared memory cost: 2096.94MBytes
+[ INFO ] [warm-up] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and researchers build powerful computer vision and AI applications. OpenVINO provides a comprehensive set of tools and libraries that enable the deployment of deep learning models on Intel hardware, leveraging the power of Intel's integrated processors and optimized libraries.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the Inference Engine is a high-performance,
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.24ms, Generation Time: 8.28s, Latency: 64.72 ms/token
+[ INFO ] [1] First token latency: 86.99 ms/token, other tokens latency: 64.53 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 86.44 ms/infer, other infers latency: 63.97 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.22ms, Generation Time: 8.29s, Latency: 64.80 ms/token
+[ INFO ] [2] First token latency: 87.13 ms/token, other tokens latency: 64.61 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 86.58 ms/infer, other infers latency: 64.06 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.25ms, Generation Time: 8.30s, Latency: 64.86 ms/token
+[ INFO ] [3] First token latency: 88.28 ms/token, other tokens latency: 64.66 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 87.81 ms/infer, other infers latency: 64.12 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 87.47 ms/token, 2nd tokens latency: 64.60 ms/token, 2nd tokens throughput: 15.48 tokens/s
+
+
+int4_sym_g128_r100_data_lora75_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.11s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.34ms, Generation Time: 9.68s, Latency: 75.64 ms/token
+[ INFO ] [warm-up] First token latency: 1453.44 ms/token, other tokens latency: 64.62 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1452.35 ms/infer, other infers latency: 64.08 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5495.75MBytes, max shared memory cost: 2094.59MBytes
+[ INFO ] [warm-up] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for building inference engines. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**Update:**
+
+I'm trying to use it to build a custom model for my project.
+
+I've already tried to use the samples provided by the toolkit, but I'm still not sure if I'm using it correctly.
+
+I've also read the documentation, but it's not
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 8.00s, Latency: 62.48 ms/token
+[ INFO ] [1] First token latency: 82.81 ms/token, other tokens latency: 62.31 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 82.29 ms/infer, other infers latency: 61.78 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 8.00s, Latency: 62.50 ms/token
+[ INFO ] [2] First token latency: 82.23 ms/token, other tokens latency: 62.33 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 81.70 ms/infer, other infers latency: 61.80 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.23ms, Generation Time: 8.00s, Latency: 62.52 ms/token
+[ INFO ] [3] First token latency: 84.26 ms/token, other tokens latency: 62.33 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 83.73 ms/infer, other infers latency: 61.80 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 83.10 ms/token, 2nd tokens latency: 62.32 ms/token, 2nd tokens throughput: 16.05 tokens/s
+
+
+int4_sym_g128_r100_data_lora50_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.95s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.29ms, Generation Time: 9.51s, Latency: 74.32 ms/token
+[ INFO ] [warm-up] First token latency: 1432.66 ms/token, other tokens latency: 63.46 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1431.61 ms/infer, other infers latency: 62.92 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5452.64MBytes, max shared memory cost: 2086.20MBytes
+[ INFO ] [warm-up] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for inference, but I couldn't find much more information.
+
+What is it? What are its main features?
+
+I'm interested in using it for inference on a neural network I've trained with TensorFlow.
+
+Any help would be appreciated.
+
+Thanks!
+
+
+---
+
+Thanks for the answers.
+
+I've found a few more resources:
+
+* [OpenVINO Toolkit Overview](https://docs.openvino.ai/en/openv
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.83s, Latency: 61.21 ms/token
+[ INFO ] [1] First token latency: 80.95 ms/token, other tokens latency: 61.04 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 80.41 ms/infer, other infers latency: 60.49 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.22ms, Generation Time: 7.82s, Latency: 61.12 ms/token
+[ INFO ] [2] First token latency: 76.61 ms/token, other tokens latency: 60.98 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 76.06 ms/infer, other infers latency: 60.43 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.25ms, Generation Time: 7.83s, Latency: 61.16 ms/token
+[ INFO ] [3] First token latency: 76.57 ms/token, other tokens latency: 61.02 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 76.01 ms/infer, other infers latency: 60.47 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 78.04 ms/token, 2nd tokens latency: 61.01 ms/token, 2nd tokens throughput: 16.39 tokens/s
+
+
+int4_sym_g128_r100_data_lora25_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.80s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.29ms, Generation Time: 9.33s, Latency: 72.92 ms/token
+[ INFO ] [warm-up] First token latency: 1384.74 ms/token, other tokens latency: 62.42 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1383.70 ms/infer, other infers latency: 61.88 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5468.34MBytes, max shared memory cost: 2084.44MBytes
+[ INFO ] [warm-up] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for inference, but I couldn't find much more information.
+
+What is it? What are its main features?
+
+I'm interested in using it for inference on a neural network I've trained with TensorFlow.
+
+Any help would be appreciated.
+
+Thanks!
+
+
+---
+
+Thanks for the answers.
+
+I've found a few more resources:
+
+* [OpenVINO toolkit documentation](https://docs.openvino.com/openpose/tutorials
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 7.68s, Latency: 59.97 ms/token
+[ INFO ] [1] First token latency: 77.21 ms/token, other tokens latency: 59.82 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 76.72 ms/infer, other infers latency: 59.28 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.22ms, Detokenization Time: 0.23ms, Generation Time: 7.67s, Latency: 59.96 ms/token
+[ INFO ] [2] First token latency: 77.58 ms/token, other tokens latency: 59.80 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 77.04 ms/infer, other infers latency: 59.26 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.22ms, Detokenization Time: 0.23ms, Generation Time: 7.68s, Latency: 59.99 ms/token
+[ INFO ] [3] First token latency: 77.64 ms/token, other tokens latency: 59.84 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 77.09 ms/infer, other infers latency: 59.28 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 77.48 ms/token, 2nd tokens latency: 59.82 ms/token, 2nd tokens throughput: 16.72 tokens/s
+
+
+int4_sym_g128_r100_data_lora
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_loraINFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.91s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.31ms, Generation Time: 9.72s, Latency: 75.96 ms/token
+[ INFO ] [warm-up] First token latency: 1344.54 ms/token, other tokens latency: 65.79 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1343.48 ms/infer, other infers latency: 65.26 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5538.62MBytes, max shared memory cost: 2129.49MBytes
+[ INFO ] [warm-up] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and researchers build powerful computer vision and AI applications. OpenVINO provides a comprehensive set of tools and libraries that enable the deployment of deep learning models on Intel hardware, leveraging the power of Intel's integrated processors and optimized libraries.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the Inference Engine is a high-performance,
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 8.15s, Latency: 63.68 ms/token
+[ INFO ] [1] First token latency: 82.39 ms/token, other tokens latency: 63.52 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 81.85 ms/infer, other infers latency: 62.97 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 8.14s, Latency: 63.57 ms/token
+[ INFO ] [2] First token latency: 80.92 ms/token, other tokens latency: 63.42 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 80.37 ms/infer, other infers latency: 62.88 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.25ms, Generation Time: 8.13s, Latency: 63.54 ms/token
+[ INFO ] [3] First token latency: 72.38 ms/token, other tokens latency: 63.45 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 71.83 ms/infer, other infers latency: 62.91 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 78.56 ms/token, 2nd tokens latency: 63.47 ms/token, 2nd tokens throughput: 15.76 tokens/s
+
+
+int4_sym_g128_r100_data_lora75
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.80s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.30ms, Generation Time: 9.45s, Latency: 73.86 ms/token
+[ INFO ] [warm-up] First token latency: 1359.78 ms/token, other tokens latency: 63.55 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1358.74 ms/infer, other infers latency: 63.02 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5479.59MBytes, max shared memory cost: 2117.20MBytes
+[ INFO ] [warm-up] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolchain?
+
+I've been looking for a good toolchain for running inference on a neural network. I've come across OpenVINO, but I'm not sure what it is.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**EDIT:**
+
+I've been looking into it a bit more, and I've found this:
+
+> OpenVINO is an open-source toolkit for building and deploying inference engines.
+>
+> The OpenVINO toolkit is a collection of
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.23ms, Detokenization Time: 0.22ms, Generation Time: 7.86s, Latency: 61.37 ms/token
+[ INFO ] [1] First token latency: 78.20 ms/token, other tokens latency: 61.22 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 77.66 ms/infer, other infers latency: 60.69 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.86s, Latency: 61.40 ms/token
+[ INFO ] [2] First token latency: 77.73 ms/token, other tokens latency: 61.25 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 77.20 ms/infer, other infers latency: 60.72 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.23ms, Generation Time: 7.86s, Latency: 61.44 ms/token
+[ INFO ] [3] First token latency: 78.31 ms/token, other tokens latency: 61.29 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 77.78 ms/infer, other infers latency: 60.76 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 78.08 ms/token, 2nd tokens latency: 61.25 ms/token, 2nd tokens throughput: 16.33 tokens/s
+
+
+int4_sym_g128_r100_data_lora50
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.75s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.27ms, Detokenization Time: 0.31ms, Generation Time: 9.33s, Latency: 72.92 ms/token
+[ INFO ] [warm-up] First token latency: 1337.82 ms/token, other tokens latency: 62.78 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1336.79 ms/infer, other infers latency: 62.23 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5418.52MBytes, max shared memory cost: 2098.38MBytes
+[ INFO ] [warm-up] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for building inference engines. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**Edit:**
+
+I'm trying to use it to build a custom model for my project.
+
+I've already installed the OpenVINO environment and the Inference Engine samples.
+
+I'm using the Python API.
+
+I've already tried to run the example provided in the samples, but
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 7.77s, Latency: 60.71 ms/token
+[ INFO ] [1] First token latency: 78.42 ms/token, other tokens latency: 60.55 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 77.89 ms/infer, other infers latency: 60.00 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.24ms, Generation Time: 7.77s, Latency: 60.71 ms/token
+[ INFO ] [2] First token latency: 76.99 ms/token, other tokens latency: 60.57 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 76.45 ms/infer, other infers latency: 60.04 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.24ms, Generation Time: 7.77s, Latency: 60.71 ms/token
+[ INFO ] [3] First token latency: 77.01 ms/token, other tokens latency: 60.57 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 76.47 ms/infer, other infers latency: 60.05 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 77.47 ms/token, 2nd tokens latency: 60.56 ms/token, 2nd tokens throughput: 16.51 tokens/s
+
+
+int4_sym_g128_r100_data_lora25
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.63s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.29ms, Generation Time: 9.28s, Latency: 72.51 ms/token
+[ INFO ] [warm-up] First token latency: 1378.50 ms/token, other tokens latency: 62.04 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1377.41 ms/infer, other infers latency: 61.49 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5431.57MBytes, max shared memory cost: 2092.70MBytes
+[ INFO ] [warm-up] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolchain?
+
+I've been looking for a good toolchain for running inference on a neural network. I've come across OpenVINO, but I'm not sure what it is.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**EDIT:**
+
+I've been looking into it a bit more, and I've found this:
+
+> OpenVINO is an open-source toolkit for building and deploying inference engines.
+>
+> The OpenVINO toolkit is a collection of
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 7.66s, Latency: 59.84 ms/token
+[ INFO ] [1] First token latency: 83.43 ms/token, other tokens latency: 59.64 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 82.88 ms/infer, other infers latency: 59.10 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.22ms, Detokenization Time: 0.24ms, Generation Time: 7.66s, Latency: 59.82 ms/token
+[ INFO ] [2] First token latency: 75.14 ms/token, other tokens latency: 59.69 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 74.60 ms/infer, other infers latency: 59.15 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.66s, Latency: 59.86 ms/token
+[ INFO ] [3] First token latency: 75.51 ms/token, other tokens latency: 59.72 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 74.99 ms/infer, other infers latency: 59.17 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 78.03 ms/token, 2nd tokens latency: 59.68 ms/token, 2nd tokens throughput: 16.76 tokens/s
+
+
+int4_sym_g128_r100_data_lora_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.29s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.32ms, Generation Time: 10.04s, Latency: 78.46 ms/token
+[ INFO ] [warm-up] First token latency: 1498.64 ms/token, other tokens latency: 67.10 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1497.59 ms/infer, other infers latency: 66.56 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5499.39MBytes, max shared memory cost: 2097.41MBytes
+[ INFO ] [warm-up] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and researchers build powerful computer vision and AI applications. OpenVINO provides a comprehensive set of tools and libraries that enable the deployment of deep learning models on Intel hardware, leveraging the power of Intel's integrated processors and optimized libraries.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the Inference Engine is a high-performance,
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 8.31s, Latency: 64.91 ms/token
+[ INFO ] [1] First token latency: 87.02 ms/token, other tokens latency: 64.72 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 86.48 ms/infer, other infers latency: 64.18 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.23ms, Detokenization Time: 0.23ms, Generation Time: 8.32s, Latency: 64.98 ms/token
+[ INFO ] [2] First token latency: 87.25 ms/token, other tokens latency: 64.79 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 86.71 ms/infer, other infers latency: 64.24 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.25ms, Generation Time: 8.32s, Latency: 65.01 ms/token
+[ INFO ] [3] First token latency: 88.16 ms/token, other tokens latency: 64.81 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 87.61 ms/infer, other infers latency: 64.26 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 87.48 ms/token, 2nd tokens latency: 64.77 ms/token, 2nd tokens throughput: 15.44 tokens/s
+
+
+int4_sym_g128_r100_data_lora75_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.07s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.26ms, Detokenization Time: 0.32ms, Generation Time: 9.71s, Latency: 75.87 ms/token
+[ INFO ] [warm-up] First token latency: 1469.90 ms/token, other tokens latency: 64.71 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1468.74 ms/infer, other infers latency: 64.18 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5421.71MBytes, max shared memory cost: 2093.21MBytes
+[ INFO ] [warm-up] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for building inference engines. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**Update:**
+
+I'm trying to use it to build a custom model for my project.
+
+I've already tried to use the samples provided by the toolkit, but I'm still not sure if I'm using it correctly.
+
+I've also read the documentation, but it's not
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.01s, Latency: 62.56 ms/token
+[ INFO ] [1] First token latency: 83.45 ms/token, other tokens latency: 62.38 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 82.92 ms/infer, other infers latency: 61.84 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.22ms, Generation Time: 8.08s, Latency: 63.11 ms/token
+[ INFO ] [2] First token latency: 82.12 ms/token, other tokens latency: 62.94 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 81.57 ms/infer, other infers latency: 62.41 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 8.09s, Latency: 63.22 ms/token
+[ INFO ] [3] First token latency: 95.36 ms/token, other tokens latency: 62.95 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 94.85 ms/infer, other infers latency: 62.41 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 86.98 ms/token, 2nd tokens latency: 62.76 ms/token, 2nd tokens throughput: 15.93 tokens/s
+
+
+int4_sym_g128_r100_data_lora50_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.09s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.32ms, Generation Time: 9.62s, Latency: 75.16 ms/token
+[ INFO ] [warm-up] First token latency: 1489.28 ms/token, other tokens latency: 63.86 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1488.22 ms/infer, other infers latency: 63.31 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5470.89MBytes, max shared memory cost: 2087.62MBytes
+[ INFO ] [warm-up] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for inference, but I couldn't find much more information.
+
+What is it? What are its main features?
+
+I'm interested in using it for inference on a neural network I've trained with TensorFlow.
+
+Any help would be appreciated.
+
+Thanks!
+
+
+---
+
+Thanks for the answers.
+
+I've found a few more resources:
+
+* [OpenVINO Toolkit Overview](https://docs.openvino.ai/en/openv
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.22ms, Generation Time: 7.87s, Latency: 61.46 ms/token
+[ INFO ] [1] First token latency: 80.34 ms/token, other tokens latency: 61.30 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 79.78 ms/infer, other infers latency: 60.76 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.22ms, Generation Time: 7.87s, Latency: 61.49 ms/token
+[ INFO ] [2] First token latency: 80.21 ms/token, other tokens latency: 61.33 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 79.66 ms/infer, other infers latency: 60.78 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.22ms, Detokenization Time: 0.25ms, Generation Time: 7.93s, Latency: 61.97 ms/token
+[ INFO ] [3] First token latency: 77.92 ms/token, other tokens latency: 61.82 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 77.37 ms/infer, other infers latency: 61.27 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 79.49 ms/token, 2nd tokens latency: 61.48 ms/token, 2nd tokens throughput: 16.26 tokens/s
+
+
+int4_sym_g128_r100_data_lora25_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.95s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.30ms, Detokenization Time: 0.30ms, Generation Time: 9.40s, Latency: 73.44 ms/token
+[ INFO ] [warm-up] First token latency: 1433.36 ms/token, other tokens latency: 62.56 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1432.43 ms/infer, other infers latency: 62.02 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5387.54MBytes, max shared memory cost: 2084.48MBytes
+[ INFO ] [warm-up] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for inference, but I couldn't find much more information.
+
+What is it? What are its main features?
+
+I'm interested in using it for inference on a neural network I've trained with TensorFlow.
+
+Any help would be appreciated.
+
+Thanks!
+
+
+---
+
+Thanks for the answers.
+
+I've found a few more resources:
+
+* [OpenVINO toolkit documentation](https://docs.openvino.com/openpose/tutorials
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.70s, Latency: 60.12 ms/token
+[ INFO ] [1] First token latency: 77.14 ms/token, other tokens latency: 59.97 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 76.61 ms/infer, other infers latency: 59.44 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.23ms, Generation Time: 7.68s, Latency: 60.04 ms/token
+[ INFO ] [2] First token latency: 72.21 ms/token, other tokens latency: 59.92 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 71.67 ms/infer, other infers latency: 59.39 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.69s, Latency: 60.11 ms/token
+[ INFO ] [3] First token latency: 71.93 ms/token, other tokens latency: 60.00 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 71.39 ms/infer, other infers latency: 59.47 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 73.76 ms/token, 2nd tokens latency: 59.97 ms/token, 2nd tokens throughput: 16.68 tokens/s
+
+
+int4_sym_g128_r100_data_lora
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_loraINFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.79s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.27ms, Detokenization Time: 0.31ms, Generation Time: 9.76s, Latency: 76.22 ms/token
+[ INFO ] [warm-up] First token latency: 1358.16 ms/token, other tokens latency: 65.95 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1357.09 ms/infer, other infers latency: 65.40 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5592.86MBytes, max shared memory cost: 2130.25MBytes
+[ INFO ] [warm-up] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and researchers build powerful computer vision and AI applications. OpenVINO provides a comprehensive set of tools and libraries that enable the deployment of deep learning models on Intel hardware, leveraging the power of Intel's integrated processors and optimized libraries.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the Inference Engine is a high-performance,
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.25ms, Generation Time: 8.16s, Latency: 63.74 ms/token
+[ INFO ] [1] First token latency: 81.37 ms/token, other tokens latency: 63.59 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 80.84 ms/infer, other infers latency: 63.06 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.24ms, Generation Time: 8.15s, Latency: 63.70 ms/token
+[ INFO ] [2] First token latency: 73.44 ms/token, other tokens latency: 63.61 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 72.90 ms/infer, other infers latency: 63.08 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.25ms, Generation Time: 8.16s, Latency: 63.76 ms/token
+[ INFO ] [3] First token latency: 72.58 ms/token, other tokens latency: 63.67 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 72.05 ms/infer, other infers latency: 63.14 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 75.80 ms/token, 2nd tokens latency: 63.62 ms/token, 2nd tokens throughput: 15.72 tokens/s
+
+
+int4_sym_g128_r100_data_lora75
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.79s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.27ms, Detokenization Time: 0.29ms, Generation Time: 9.45s, Latency: 73.81 ms/token
+[ INFO ] [warm-up] First token latency: 1338.84 ms/token, other tokens latency: 63.68 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1337.79 ms/infer, other infers latency: 63.13 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5494.09MBytes, max shared memory cost: 2118.21MBytes
+[ INFO ] [warm-up] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolchain?
+
+I've been looking for a good toolchain for running inference on a neural network. I've come across OpenVINO, but I'm not sure what it is.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**EDIT:**
+
+I've been looking into it a bit more, and I've found this:
+
+> OpenVINO is an open-source toolkit for building and deploying inference engines.
+>
+> The OpenVINO toolkit is a collection of
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.86s, Latency: 61.39 ms/token
+[ INFO ] [1] First token latency: 78.82 ms/token, other tokens latency: 61.24 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 78.28 ms/infer, other infers latency: 60.69 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.22ms, Generation Time: 7.86s, Latency: 61.43 ms/token
+[ INFO ] [2] First token latency: 78.09 ms/token, other tokens latency: 61.28 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 77.57 ms/infer, other infers latency: 60.74 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.22ms, Generation Time: 7.86s, Latency: 61.44 ms/token
+[ INFO ] [3] First token latency: 78.10 ms/token, other tokens latency: 61.30 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 77.56 ms/infer, other infers latency: 60.77 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 78.34 ms/token, 2nd tokens latency: 61.27 ms/token, 2nd tokens throughput: 16.32 tokens/s
+
+
+int4_sym_g128_r100_data_lora50
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.68s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.31ms, Generation Time: 9.38s, Latency: 73.30 ms/token
+[ INFO ] [warm-up] First token latency: 1349.94 ms/token, other tokens latency: 63.07 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1348.85 ms/infer, other infers latency: 62.54 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5415.41MBytes, max shared memory cost: 2098.93MBytes
+[ INFO ] [warm-up] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for building inference engines. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**Edit:**
+
+I'm trying to use it to build a custom model for my project.
+
+I've already installed the OpenVINO environment and the Inference Engine samples.
+
+I'm using the Python API.
+
+I've already tried to run the example provided in the samples, but
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.24ms, Generation Time: 7.79s, Latency: 60.86 ms/token
+[ INFO ] [1] First token latency: 85.02 ms/token, other tokens latency: 60.66 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 84.48 ms/infer, other infers latency: 60.13 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.21ms, Generation Time: 7.77s, Latency: 60.72 ms/token
+[ INFO ] [2] First token latency: 68.89 ms/token, other tokens latency: 60.64 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 68.36 ms/infer, other infers latency: 60.11 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.22ms, Detokenization Time: 0.24ms, Generation Time: 7.78s, Latency: 60.74 ms/token
+[ INFO ] [3] First token latency: 68.79 ms/token, other tokens latency: 60.66 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 68.27 ms/infer, other infers latency: 60.14 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['2729f4a884b48ed21985f8e524e2df3c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 74.24 ms/token, 2nd tokens latency: 60.65 ms/token, 2nd tokens throughput: 16.49 tokens/s
+
+
+int4_sym_g128_r100_data_lora25
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.66s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.28ms, Detokenization Time: 0.31ms, Generation Time: 9.27s, Latency: 72.41 ms/token
+[ INFO ] [warm-up] First token latency: 1357.31 ms/token, other tokens latency: 62.10 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1356.26 ms/infer, other infers latency: 61.57 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5391.12MBytes, max shared memory cost: 2091.45MBytes
+[ INFO ] [warm-up] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolchain?
+
+I've been looking for a good toolchain for running inference on a neural network. I've come across OpenVINO, but I'm not sure what it is.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**EDIT:**
+
+I've been looking into it a bit more, and I've found this:
+
+> OpenVINO is an open-source toolkit for building and deploying inference engines.
+>
+> The OpenVINO toolkit is a collection of
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.24ms, Generation Time: 7.65s, Latency: 59.80 ms/token
+[ INFO ] [1] First token latency: 75.87 ms/token, other tokens latency: 59.66 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 75.33 ms/infer, other infers latency: 59.12 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.22ms, Generation Time: 7.64s, Latency: 59.69 ms/token
+[ INFO ] [2] First token latency: 67.77 ms/token, other tokens latency: 59.61 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 67.21 ms/infer, other infers latency: 59.08 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 7.65s, Latency: 59.76 ms/token
+[ INFO ] [3] First token latency: 67.53 ms/token, other tokens latency: 59.69 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 66.99 ms/infer, other infers latency: 59.15 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['9f0b0443d1926098bbda51ccef4c611e']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 70.39 ms/token, 2nd tokens latency: 59.65 ms/token, 2nd tokens throughput: 16.76 tokens/s
+
+
+int4_sym_g128_r100_data_lora_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.34s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.27ms, Detokenization Time: 0.31ms, Generation Time: 10.04s, Latency: 78.46 ms/token
+[ INFO ] [warm-up] First token latency: 1493.34 ms/token, other tokens latency: 67.14 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1492.26 ms/infer, other infers latency: 66.59 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5475.47MBytes, max shared memory cost: 2098.25MBytes
+[ INFO ] [warm-up] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO?<|end|><|assistant|> OpenVINO, short for Open Visual Inference and Network Optimization, is an open-source toolkit developed by Intel. It is designed to help developers and researchers build powerful computer vision and AI applications. OpenVINO provides a comprehensive set of tools and libraries that enable the deployment of deep learning models on Intel hardware, leveraging the power of Intel's integrated processors and optimized libraries.
+
+The main components of OpenVINO are:
+
+1. Inference Engine: The core of OpenVINO, the Inference Engine is a high-performance,
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.32s, Latency: 64.97 ms/token
+[ INFO ] [1] First token latency: 87.24 ms/token, other tokens latency: 64.78 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 86.68 ms/infer, other infers latency: 64.23 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.22ms, Detokenization Time: 0.23ms, Generation Time: 8.33s, Latency: 65.07 ms/token
+[ INFO ] [2] First token latency: 87.58 ms/token, other tokens latency: 64.87 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 87.02 ms/infer, other infers latency: 64.32 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.24ms, Generation Time: 8.34s, Latency: 65.14 ms/token
+[ INFO ] [3] First token latency: 87.93 ms/token, other tokens latency: 64.94 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 87.39 ms/infer, other infers latency: 64.41 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['85b5fddb7c454c7a9146e44a5a8f183a']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 87.58 ms/token, 2nd tokens latency: 64.87 ms/token, 2nd tokens throughput: 15.42 tokens/s
+
+
+int4_sym_g128_r100_data_lora75_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora75_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 3.08s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.31ms, Generation Time: 9.70s, Latency: 75.76 ms/token
+[ INFO ] [warm-up] First token latency: 1435.67 ms/token, other tokens latency: 64.87 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1434.58 ms/infer, other infers latency: 64.31 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5470.99MBytes, max shared memory cost: 2092.61MBytes
+[ INFO ] [warm-up] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for building inference engines. But I couldn't find much more information about it.
+
+Can someone explain what it is and how it works?
+
+Thanks!
+
+
+----------
+
+
+**Update:**
+
+I'm trying to use it to build a custom model for my project.
+
+I've already tried to use the samples provided by the toolkit, but I'm still not sure if I'm using it correctly.
+
+I've also read the documentation, but it's not
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.23ms, Generation Time: 8.03s, Latency: 62.70 ms/token
+[ INFO ] [1] First token latency: 83.04 ms/token, other tokens latency: 62.53 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 82.49 ms/infer, other infers latency: 61.98 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.27ms, Generation Time: 8.02s, Latency: 62.64 ms/token
+[ INFO ] [2] First token latency: 82.25 ms/token, other tokens latency: 62.47 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 81.70 ms/infer, other infers latency: 61.92 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.24ms, Generation Time: 8.02s, Latency: 62.69 ms/token
+[ INFO ] [3] First token latency: 82.61 ms/token, other tokens latency: 62.51 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 82.08 ms/infer, other infers latency: 61.98 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['58b8e523508bfa76837c69f9c82b102c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 82.63 ms/token, 2nd tokens latency: 62.50 ms/token, 2nd tokens throughput: 16.00 tokens/s
+
+
+int4_sym_g128_r100_data_lora50_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora50_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.89s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.29ms, Detokenization Time: 0.31ms, Generation Time: 9.55s, Latency: 74.62 ms/token
+[ INFO ] [warm-up] First token latency: 1418.58 ms/token, other tokens latency: 63.85 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1417.52 ms/infer, other infers latency: 63.29 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5445.56MBytes, max shared memory cost: 2087.96MBytes
+[ INFO ] [warm-up] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for inference, but I couldn't find much more information.
+
+What is it? What are its main features?
+
+I'm interested in using it for inference on a neural network I've trained with TensorFlow.
+
+Any help would be appreciated.
+
+Thanks!
+
+
+---
+
+Thanks for the answers.
+
+I've found a few more resources:
+
+* [OpenVINO Toolkit Overview](https://docs.openvino.ai/en/openv
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 7.85s, Latency: 61.31 ms/token
+[ INFO ] [1] First token latency: 79.90 ms/token, other tokens latency: 61.15 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 79.35 ms/infer, other infers latency: 60.62 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.21ms, Detokenization Time: 0.23ms, Generation Time: 7.84s, Latency: 61.25 ms/token
+[ INFO ] [2] First token latency: 76.59 ms/token, other tokens latency: 61.11 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 76.06 ms/infer, other infers latency: 60.58 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.19ms, Detokenization Time: 0.24ms, Generation Time: 7.84s, Latency: 61.25 ms/token
+[ INFO ] [3] First token latency: 76.47 ms/token, other tokens latency: 61.12 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 75.93 ms/infer, other infers latency: 60.58 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['292a2fda753601e19735f9162f80791c']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 77.65 ms/token, 2nd tokens latency: 61.13 ms/token, 2nd tokens throughput: 16.36 tokens/s
+
+
+int4_sym_g128_r100_data_lora25_int8
+
+Launching numactl -N 0 --membind=0 python benchmark.py -mc 1 -ic 128 -d CPU -n 3 -p "What is OpenVINO" -lc dyn_quant_config.json -m /home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8INFO:nncf:NNCF initialized successfully. Supported frameworks detected: torch, onnx, openvino
+The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: phi-3-mini-4k-instruct
+[ INFO ] OV Config={'DYNAMIC_QUANTIZATION_GROUP_SIZE': '128', 'PERFORMANCE_HINT': 'LATENCY', 'CACHE_DIR': '', 'NUM_STREAMS': '1'}
+[ INFO ] OPENVINO_TORCH_BACKEND_DEVICE=CPU
+[ INFO ] Model path=/home/nlyaly/projects/lm-evaluation-harness/cache/phi-3-mini-4k-instruct/int4_sym_g128_r100_data_lora25_int8, openvino runtime version: 2024.1.0-15008-f4afc983258-releases/2024/1
+Compiling the model to CPU ...
+[ INFO ] From pretrained time: 2.81s
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1
+[ INFO ] [warm-up] Input text: What is OpenVINO
+[ INFO ] [warm-up] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.27ms, Detokenization Time: 0.29ms, Generation Time: 9.34s, Latency: 72.95 ms/token
+[ INFO ] [warm-up] First token latency: 1401.11 ms/token, other tokens latency: 62.30 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up] First infer latency: 1400.02 ms/infer, other infers latency: 61.76 ms/infer, inference count: 128
+[ INFO ] [warm-up] Max rss memory cost: 5445.09MBytes, max shared memory cost: 2083.88MBytes
+[ INFO ] [warm-up] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [warm-up] Generated: <s> What is OpenVINO toolkit?
+
+Searching the internet, I found that it is a toolkit for inference, but I couldn't find much more information.
+
+What is it? What are its main features?
+
+I'm interested in using it for inference on a neural network I've trained with TensorFlow.
+
+Any help would be appreciated.
+
+Thanks!
+
+
+---
+
+Thanks for the answers.
+
+I've found a few more resources:
+
+* [OpenVINO toolkit documentation](https://docs.openvino.com/openpose/tutorials
+[ INFO ] [1] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.23ms, Generation Time: 7.67s, Latency: 59.95 ms/token
+[ INFO ] [1] First token latency: 81.35 ms/token, other tokens latency: 59.77 ms/token, len of tokens: 128 * 1
+[ INFO ] [1] First infer latency: 80.87 ms/infer, other infers latency: 59.22 ms/infer, inference count: 128
+[ INFO ] [1] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [2] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.18ms, Detokenization Time: 0.22ms, Generation Time: 7.68s, Latency: 59.98 ms/token
+[ INFO ] [2] First token latency: 77.18 ms/token, other tokens latency: 59.83 ms/token, len of tokens: 128 * 1
+[ INFO ] [2] First infer latency: 76.62 ms/infer, other infers latency: 59.27 ms/infer, inference count: 128
+[ INFO ] [2] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] [3] Input token size: 7, Output size: 128, Infer count: 128, Tokenization Time: 0.20ms, Detokenization Time: 0.24ms, Generation Time: 7.68s, Latency: 60.00 ms/token
+[ INFO ] [3] First token latency: 77.51 ms/token, other tokens latency: 59.85 ms/token, len of tokens: 128 * 1
+[ INFO ] [3] First infer latency: 76.95 ms/infer, other infers latency: 59.29 ms/infer, inference count: 128
+[ INFO ] [3] Result MD5:['2d20d8883b39947dbd53077c3d6198ed']
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] Prompt[0] Input token size: 7, 1st token lantency: 78.68 ms/token, 2nd tokens latency: 59.82 ms/token, 2nd tokens throughput: 16.72 tokens/s
