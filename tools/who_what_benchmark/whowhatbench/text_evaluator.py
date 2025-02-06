@@ -182,32 +182,33 @@ class TextEvaluator(BaseEvaluator):
             all_metrics.update(metric_dict)
             all_metrics_per_prompt.update(metric_per_question)
 
-        self.last_cmp = all_metrics_per_prompt
-        self.last_cmp["prompts"] = predictions["prompts"].values
-        self.last_cmp["source_model"] = self.gt_data["answers"].values
-        self.last_cmp["optimized_model"] = predictions["answers"].values
-        self.last_cmp = pd.DataFrame(self.last_cmp)
-        self.last_cmp.rename(columns={"prompts": "prompt"}, inplace=True)
+        # self.last_cmp = all_metrics_per_prompt
+        # self.last_cmp["prompts"] = predictions["prompts"].values
+        # self.last_cmp["source_model"] = self.gt_data["answers"].values
+        # self.last_cmp["optimized_model"] = predictions["answers"].values
+        # self.last_cmp = pd.DataFrame(self.last_cmp)
+        # self.last_cmp.rename(columns={"prompts": "prompt"}, inplace=True)
 
         return pd.DataFrame(all_metrics_per_prompt), pd.DataFrame([all_metrics])
 
     def worst_examples(self, top_k: int = 5, metric="similarity"):
-        assert self.last_cmp is not None
+        # assert self.last_cmp is not None
 
-        if metric in ["SDT", "SDT norm"]:
-            res = self.last_cmp.nlargest(top_k, metric)
-        else:
-            res = self.last_cmp.nsmallest(top_k, metric)
+        # if metric in ["SDT", "SDT norm"]:
+        #     res = self.last_cmp.nlargest(top_k, metric)
+        # else:
+        #     res = self.last_cmp.nsmallest(top_k, metric)
 
-        res = list(row for idx, row in res.iterrows())
+        # res = list(row for idx, row in res.iterrows())
 
-        return res
+        return {}
 
     def _generate_data(self, model, gen_answer_fn=None, generation_config=None):
         def default_gen_answer(model, tokenizer, prompt, max_new_tokens, crop_question, use_chat_template=False):
             if use_chat_template:
+                device = 'cpu' if not hasattr(model,'parameters') else next(iter(model.parameters())).device
                 message = [{"role": "user", "content": prompt}]
-                inputs = tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt")
+                inputs = tokenizer.apply_chat_template(message, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(device)
                 tokens = model.generate(inputs, do_sample=False, max_new_tokens=max_new_tokens)
                 if crop_question:
                     tokens = tokens[:, inputs.shape[-1]:]
